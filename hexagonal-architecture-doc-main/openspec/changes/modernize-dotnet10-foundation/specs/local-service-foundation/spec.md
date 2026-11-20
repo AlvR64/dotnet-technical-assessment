@@ -54,7 +54,7 @@ La aplicación SHALL aceptar la conexión a PostgreSQL mediante configuración e
 - **THEN** la comprobación falla de forma comprensible sin exponer la contraseña
 
 ### Requirement: Documentación adicional sin alterar originales
-Las instrucciones de ejecución y comprobación SHALL estar en `README.PRUEBA.md` sin modificar los documentos originales de la plantilla.
+Las instrucciones de ejecución y comprobación SHALL estar en `README.PRUEBA-TECNICA-ALVARO.md` sin modificar los documentos originales de la plantilla.
 
 #### Scenario: Consulta del evaluador
 - **WHEN** el evaluador consulta la documentación de la prueba

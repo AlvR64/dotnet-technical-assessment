@@ -2,7 +2,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 using GtMotive.Estimate.Microservice.Api.Authorization;
-using GtMotive.Estimate.Microservice.Api.DependencyInjection;
 using GtMotive.Estimate.Microservice.Api.Filters;
 using GtMotive.Estimate.Microservice.ApplicationCore;
 using Microsoft.AspNetCore.Mvc;
@@ -35,10 +34,18 @@ namespace GtMotive.Estimate.Microservice.Api
 
         public static void AddApiDependencies(this IServiceCollection services)
         {
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.InvalidModelStateResponseFactory = context =>
+                {
+                    var problem = new ValidationProblemDetails(context.ModelState) { Status = 400 };
+                    problem.Extensions["code"] = "invalid_request";
+                    return new BadRequestObjectResult(problem);
+                };
+            });
             services.AddAuthorization(AuthorizationOptionsExtensions.Configure);
-            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ApiConfiguration).GetTypeInfo().Assembly));
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ApplicationConfiguration).GetTypeInfo().Assembly));
             services.AddUseCases();
-            services.AddPresenters();
         }
     }
 }

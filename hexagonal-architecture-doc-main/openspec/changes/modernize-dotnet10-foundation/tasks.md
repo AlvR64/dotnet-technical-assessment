@@ -12,21 +12,21 @@
 - [x] 2.2 Simplificar configuración, logs y forwarded headers sin exponer datos sensibles; verificar el arranque con configuración local y revisar salida de logs.
 - [x] 2.3 Adaptar Swagger a versiones compatibles y eliminar OAuth corporativo; verificar documento OpenAPI y UI por HTTP.
 - [x] 2.4 Incorporar `/health/live` independiente de PostgreSQL y una prueba HTTP automatizada; ejecutarla con el host de pruebas.
-- [x] 2.5 Crear `README.PRUEBA.md` con requisitos y comandos de API, Swagger y pruebas rápidas, indicando ausencia de autenticación; verificar que los documentos originales no cambian.
+- [x] 2.5 Crear `README.PRUEBA-TECNICA-ALVARO.md` con requisitos y comandos de API, Swagger y pruebas rápidas, indicando ausencia de autenticación; verificar que los documentos originales no cambian.
 
 ## 3. Persistencia PostgreSQL
 
 - [x] 3.1 Añadir EF Core 10, Npgsql y herramientas de diseño compatibles en Infrastructure y fijar `dotnet-ef` localmente; verificar restore y resolución de la herramienta.
 - [x] 3.2 Registrar un DbContext mínimo y configuración externa de conexión sin crear entidades ni migración vacía; comprobar resolución del contexto y errores sin contraseñas en logs.
 - [x] 3.3 Añadir prueba de conectividad contra PostgreSQL real y permitir separarla de las pruebas rápidas; verificar tanto la conexión exitosa como la ejecución aislada sin base de datos.
-- [x] 3.4 Documentar en `README.PRUEBA.md` configuración y ejecución de la prueba de conectividad, sin modificar documentos originales.
+- [x] 3.4 Documentar en `README.PRUEBA-TECNICA-ALVARO.md` configuración y ejecución de la prueba de conectividad, sin modificar documentos originales.
 
 ## 4. Docker y pruebas
 
 - [x] 4.1 Actualizar Dockerfile a .NET 10, incluir Domain en restore, eliminar feed privado y configurar usuario/puerto; verificar construcción de la imagen con Docker operativo.
 - [x] 4.2 Añadir `.dockerignore` y Compose con PostgreSQL versionado, volumen y healthcheck; verificar `docker compose up --build`, liveness y conectividad desde API.
 - [x] 4.3 Actualizar TestHost y fixtures, quitar exclusión de Domain y dependencias de autenticación de prueba innecesarias; verificar descubrimiento y ejecución de pruebas reales.
-- [x] 4.4 Documentar Compose, puertos, credenciales locales, pruebas y conservación del volumen en `README.PRUEBA.md`; ejecutar los comandos documentados y confirmar documentos originales intactos.
+- [x] 4.4 Documentar Compose, puertos, credenciales locales, pruebas y conservación del volumen en `README.PRUEBA-TECNICA-ALVARO.md`; ejecutar los comandos documentados y confirmar documentos originales intactos.
 
 ## 5. Verificación integrada
 

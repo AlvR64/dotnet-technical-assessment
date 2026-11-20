@@ -1,0 +1,3 @@
+# Design
+
+La opción Database:SeedDemoData está desactivada por defecto y habilitada en Compose. Tras las migraciones, un inicializador en infraestructura captura un instante UTC, adquiere un advisory lock transaccional PostgreSQL y comprueba ambas tablas. Si están vacías inserta un vehículo elegible y un alquiler histórico devuelto en la misma transacción. Si alguna contiene datos no escribe. Los reinicios no modifican fechas ni vuelven a crear registros; el lock solo coordina inicializadores cooperantes, no otras escrituras. Los fallos se propagan y evitan el arranque. Sin migración automática, el esquema debe existir previamente.

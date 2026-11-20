@@ -18,7 +18,7 @@
 - [x] 3.1 Crear el mecanismo de contexto de diseño y migración inicial EF; revisar el SQL generado y verificar creación del esquema en una base temporal vacía sin `EnsureCreated`.
 - [x] 3.2 Habilitar migraciones en el arranque solo mediante opción explícita local de Compose; probar opción desactivada, activada y error de migración que impide arrancar.
 - [x] 3.3 Verificar arranque con base vacía y reinicio conservando datos en una base y volumen aislados de pruebas, sin eliminar volúmenes existentes.
-- [x] 3.4 Actualizar solo `README.PRUEBA.md` con esquema, supuestos, comandos de migración y pruebas; ejecutar los comandos y confirmar que los documentos originales permanecen intactos.
+- [x] 3.4 Actualizar solo `README.PRUEBA-TECNICA-ALVARO.md` con esquema, supuestos, comandos de migración y pruebas; ejecutar los comandos y confirmar que los documentos originales permanecen intactos.
 
 ## 4. Validación integrada
 

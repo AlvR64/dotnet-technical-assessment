@@ -19,6 +19,7 @@ namespace GtMotive.Estimate.Microservice.ApplicationCore
         /// <returns>The modified instance.</returns>
         public static IServiceCollection AddUseCases(this IServiceCollection services)
         {
+            services.AddSingleton(TimeProvider.System);
             return services;
         }
     }

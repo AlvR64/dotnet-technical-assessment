@@ -1,0 +1,3 @@
+# Design
+
+IVehicleRepository e IRentalRepository se definen en Domain y se implementan en Infrastructure. Los handlers de ApplicationCore consumen esos contratos. El listado devuelve vehículos desde el repositorio y se transforma en DTO en el handler. Esta decisión sustituye la organización de puertos específicos de los diseños anteriores, sin alterar los requisitos funcionales. La consulta conserva filtrado y orden en PostgreSQL, AsNoTracking y una única lectura. Las escrituras de alta se confirman inmediatamente y la devolución mantiene una actualización condicional inmediata. Solo se traducen restricciones conocidas; los errores inesperados se propagan.

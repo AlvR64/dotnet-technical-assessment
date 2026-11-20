@@ -30,7 +30,7 @@ Mantener controladores y Swagger UI, adaptando los cambios de API de Swashbuckle
 
 ### Contenedores y documentación
 
-Usar compilación multietapa con imágenes .NET 10 y PostgreSQL versionadas, puerto explícito, usuario sin privilegios, healthcheck de PostgreSQL y volumen persistente. No pasar tokens de feed al build. Credenciales de ejemplo solo para desarrollo local y documentadas como no aptas para producción. Conservar íntegros `README.md` y demás documentos originales; usar `README.PRUEBA.md` para instrucciones nuevas.
+Usar compilación multietapa con imágenes .NET 10 y PostgreSQL versionadas, puerto explícito, usuario sin privilegios, healthcheck de PostgreSQL y volumen persistente. No pasar tokens de feed al build. Credenciales de ejemplo solo para desarrollo local y documentadas como no aptas para producción. Conservar íntegros `README.md` y demás documentos originales; usar `README.PRUEBA-TECNICA-ALVARO.md` para instrucciones nuevas.
 
 ### Pruebas
 

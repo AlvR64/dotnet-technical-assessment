@@ -8,6 +8,7 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Production
       Database__ApplyMigrations: "true"
+      Database__SeedDemoData: "true"
       ConnectionStrings__Renting: Host=db;Port=5432;Database=renting;Username=renting;Password=renting-local
     depends_on:
       db:

@@ -14,4 +14,4 @@ Un alquiler debe poder finalizar conservando su historial y liberando las restri
 Ninguna.
 
 ## Impact
-Api, ApplicationCore, Infrastructure, pruebas y README.PRUEBA.md. Depende del modelo y del caso de alquiler; la disponibilidad se evalúa sin estado duplicado. Se conservan los documentos originales.
+Api, ApplicationCore, Infrastructure, pruebas y README.PRUEBA-TECNICA-ALVARO.md. Depende del modelo y del caso de alquiler; la disponibilidad se evalúa sin estado duplicado. Se conservan los documentos originales.

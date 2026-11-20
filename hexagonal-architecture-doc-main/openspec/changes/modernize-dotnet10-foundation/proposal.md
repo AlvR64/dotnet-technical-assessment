@@ -10,7 +10,7 @@ La plantilla fija un SDK .NET 9 no instalado y su host y Dockerfile dependen de 
 - **BREAKING** Retirar del host las integraciones con IdentityServer, Azure Key Vault y Application Insights; la aplicación de esta prueba no implementará autenticación.
 - Preparar EF Core y PostgreSQL sin introducir aún entidades, esquema ni migraciones de negocio.
 - Habilitar el arranque y la documentación HTTP locales, un endpoint de liveness, Docker Compose y comprobaciones técnicas mínimas.
-- Documentar las instrucciones nuevas en `README.PRUEBA.md`, sin modificar los documentos originales de la plantilla.
+- Documentar las instrucciones nuevas en `README.PRUEBA-TECNICA-ALVARO.md`, sin modificar los documentos originales de la plantilla.
 - Quedan fuera vehículos, alquileres, reglas de negocio y las pruebas funcionales específicas exigidas para la solución final.
 
 ## Capabilities

@@ -14,4 +14,4 @@ La empresa necesita alquilar vehículos sin permitir dos alquileres activos por 
 Ninguna.
 
 ## Impact
-Api, ApplicationCore, Infrastructure, pruebas y README.PRUEBA.md. Depende del modelo del plan 1. No introduce reservas futuras, pagos, autenticación ni gestión de clientes.
+Api, ApplicationCore, Infrastructure, pruebas y README.PRUEBA-TECNICA-ALVARO.md. Depende del modelo del plan 1. No introduce reservas futuras, pagos, autenticación ni gestión de clientes.

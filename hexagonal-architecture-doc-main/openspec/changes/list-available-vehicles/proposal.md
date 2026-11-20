@@ -14,4 +14,4 @@ Los consumidores necesitan conocer qué vehículos están disponibles actualment
 Ninguna.
 
 ## Impact
-Api, ApplicationCore, Infrastructure, pruebas y README.PRUEBA.md. Depende del modelo del plan 1 y se implementa después del alta. Sin modificar documentos originales.
+Api, ApplicationCore, Infrastructure, pruebas y README.PRUEBA-TECNICA-ALVARO.md. Depende del modelo del plan 1 y se implementa después del alta. Sin modificar documentos originales.

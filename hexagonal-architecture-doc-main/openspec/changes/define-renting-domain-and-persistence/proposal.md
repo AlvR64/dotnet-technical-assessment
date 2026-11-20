@@ -9,7 +9,7 @@ La infraestructura ya conecta con PostgreSQL, pero el contexto está vacío. Los
 - Definir entidades de vehículo y alquiler y sus invariantes, independientes de EF Core.
 - Mapear el modelo a PostgreSQL, con claves, restricciones e índices únicos parciales para alquileres activos.
 - Añadir migración inicial, Unit of Work, aplicación explícitamente habilitada de migraciones en Compose y pruebas aisladas.
-- Documentar los supuestos y comandos en `README.PRUEBA.md`, preservando los documentos originales.
+- Documentar los supuestos y comandos en `README.PRUEBA-TECNICA-ALVARO.md`, preservando los documentos originales.
 - Excluir endpoints, casos de uso HTTP y gestión de clientes; se abordarán posteriormente.
 
 ## Capabilities

@@ -32,11 +32,19 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddHealthChecks();
 
 var app = builder.Build();
-if (builder.Configuration.GetValue<bool>("Database:ApplyMigrations"))
+if (builder.Configuration.GetValue<bool>("Database:ApplyMigrations") || builder.Configuration.GetValue<bool>("Database:SeedDemoData"))
 {
     await using var scope = app.Services.CreateAsyncScope();
     var context = scope.ServiceProvider.GetRequiredService<RentingDbContext>();
-    await context.Database.MigrateAsync();
+    if (builder.Configuration.GetValue<bool>("Database:ApplyMigrations"))
+    {
+        await context.Database.MigrateAsync();
+    }
+
+    if (builder.Configuration.GetValue<bool>("Database:SeedDemoData"))
+    {
+        await new DemoDataSeeder(context, scope.ServiceProvider.GetRequiredService<TimeProvider>()).Seed();
+    }
 }
 
 app.UseSwagger();
